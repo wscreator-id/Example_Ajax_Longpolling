@@ -1,0 +1,52 @@
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Example Ajax Longpolling</title>
+		<link rel="icon" href="https://cdn.wscreator.co/assets/img/logo.png" type="image/x-icon" />
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="client.js"></script>
+        <style type="text/css">
+        	body{
+        		font-family: open sans;
+        	}
+
+        	#response, h1{
+        		margin-top: 10px;
+        		margin-right: 20px;
+        		margin-left: 20px;
+        	}
+
+        	.message-area{
+        		margin:100px 20px ;
+        	}
+
+        	input{
+        		border: 2px solid #999;
+        		padding: 10px;
+        		font-size: 15px;
+                display: inline-block;
+        	}
+
+            #name{
+                width:15%;
+            }
+
+            #message{
+                width: 75%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Response from server:</h1>
+        <div id="response"></div>
+
+        <div class="message-area">
+	        <form method="post">
+                <input type="text" name="name" id="name" placeholder="Your name here" value="" />
+	        	<input type="text" name="message" id="message" placeholder="Type message here" />
+	    	</form>
+	    </div>
+    </body>
+</html>
